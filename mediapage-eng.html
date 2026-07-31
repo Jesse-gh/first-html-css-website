@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head>
+    <title>Media Page (ENG)</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head> 
+
+<body> 
+    <div class="flex-container">
+        
+        <header class="header">
+            <h1>Building My First Website</h1>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <a href="homepage-eng.html">Home</a> | 
+            <a href="hp-detailed-eng.html">Technical Details</a> | 
+            <a href="mediapage-eng.html">Media</a> |
+            <!-- Switch language button will be added here -->
+        </nav>
+
+        <main class="main-content">
+            <h2>Media Gallery</h2>
+            <p>This page showcases an image gallery built with an iframe and an embedded YouTube video.</p>
+            
+            <h3>Image Gallery</h3>
+            <!-- Image gallery using iframe -->
+            <iframe width="800" height="600" name="myframe" frameborder="0" src="pic1.png"> 
+            </iframe>
+            <br/>
+            <!-- Image links with thumbnails -->
+            <div class="gallery-thumbnails">
+                <a href="pic1.png" target="myframe"><img src="thumbnail1.png" alt="Thumbnail 1"></a>
+                <a href="pic2.png" target="myframe"><img src="thumbnail2.png" alt="Thumbnail 2"></a>
+                <a href="pic3.png" target="myframe"><img src="thumbnail3.png" alt="Thumbnail 3"></a>
+                <a href="pic4.png" target="myframe"><img src="thumbnail4.png" alt="Thumbnail 4"></a>
+                <a href="pic5.png" target="myframe"><img src="thumbnail5.png" alt="Thumbnail 5"></a>
+                <a href="pic6.png" target="myframe"><img src="thumbnail6.png" alt="Thumbnail 6"></a>
+                <a href="pic7.png" target="myframe"><img src="thumbnail7.png" alt="Thumbnail 7"></a>
+                <a href="pic8.png" target="myframe"><img src="thumbnail8.png" alt="Thumbnail 8"></a>
+                <a href="pic9.png" target="myframe"><img src="thumbnail9.png" alt="Thumbnail 9"></a>
+                <a href="pic10.png" target="myframe"><img src="thumbnail10.png" alt="Thumbnail 10"></a>
+            </div>
+
+            <h3>Embedded Video</h3>
+            <p>Here is a video embedded from YouTube.</p>
+            <!-- Embedded YouTube video -->
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vL8x7LcA-Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 My Portfolio Project</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

@@ -59,3 +59,45 @@ body {
     font-size: 0.9em;
 }
 
+/* List styling requirements */
+.info-list {
+    margin: 20px 0 20px 40px; 
+    line-height: 1.8;
+}
+
+.info-list li {
+    margin-bottom: 10px; 
+}
+
+/* Inner list styling */
+.info-list ul {
+    margin-top: 10px;
+    margin-left: 20px;
+    list-style-type: square; 
+}
+
+.main-content h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #2c3e50; 
+}
+
+/* Media Page Styling */
+.gallery-thumbnails {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Allows thumbnails to wrap to the next line if needed */
+    gap: 10px;       /* Adds space between thumbnails */
+}
+
+.gallery-thumbnails img {
+    border: 2px solid #ccc; /* Add a small border to thumbnails */
+}
+
+.gallery-thumbnails img:hover {
+    border-color: #2c3e50; /* Change border color on hover */
+}
+
+.video-container {
+    margin-top: 20px;
+}
