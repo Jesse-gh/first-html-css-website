@@ -1,31 +1,78 @@
 <!DOCTYPE html> 
-<html> 
+<html lang="fi"> 
 
 <head>
-	<title> SELAIMEN TAB TEKSTI TAHAN </title> 
-	<meta charset="utf-8"/>
+    <title>Media-sivu (FIN)</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="media/favicon.png">
 </head> 
 
-
 <body> 
-	<h1>h1 heading</h1>
+    <div class="flex-container">
+        
+        <header class="header">
+            <h1>HTML & CSS Website by Jesse H</h1>
+        </header>
 
-	<p>Random textt asdf.</p>
+        <nav class="navigation">
+            <div class="nav-left-spacer"></div>
+            
+            <div class="nav-links">
+                <a href="homepage-fin.html">Etusivu</a> | 
+                <a href="hp-detailed-fin.html">Tekniset tiedot</a> | 
+                <a href="mediapage-fin.html">Media</a>
+            </div>
+            
+            <div class="nav-right-container">
+                <a href="mediapage-eng.html" class="lang-btn tooltip">Language to English
+                    <span class="tooltiptext">Vaihtaa kielen englanniksi.</span>
+                </a>
+            </div>
+        </nav>
 
+        <main class="main-content">
+            <h2>Media-sivu</h2>
+            <p>Tämä sivu on tarkoitettu kuville ja videoille.</p>
+            
+            <h3>Kuvagalleria:</h3>
+            <p>Kaikki kuvat olen ottanut itse kännykälläni Helsingin seudulla.</p>
+            
+            <iframe width="800" height="450" name="myframe" frameborder="0" src="media/1.jpg"> 
+            </iframe>
+            
+            <div class="gallery-thumbnails">
+                <a href="media/1.jpg" target="myframe"><img src="media/thumb1.jpg" alt="Pikkukuva 1"></a>
+                <a href="media/2.jpg" target="myframe"><img src="media/thumb2.jpg" alt="Pikkukuva 2"></a>
+                <a href="media/3.jpg" target="myframe"><img src="media/thumb3.jpg" alt="Pikkukuva 3"></a>
+                <a href="media/4.jpg" target="myframe"><img src="media/thumb4.jpg" alt="Pikkukuva 4"></a>
+                <a href="media/5.jpg" target="myframe"><img src="media/thumb5.jpg" alt="Pikkukuva 5"></a>
+                <a href="media/6.jpg" target="myframe"><img src="media/thumb6.jpg" alt="Pikkukuva 6"></a>
+                <a href="media/7.jpg" target="myframe"><img src="media/7.jpg" alt="Pikkukuva 7"></a>
+                <a href="media/8.jpg" target="myframe"><img src="media/thumb8.jpg" alt="Pikkukuva 8"></a>
+                <a href="media/9.jpg" target="myframe"><img src="media/thumb9.jpg" alt="Pikkukuva 9"></a>
+                <a href="media/10.jpg" target="myframe"><img src="media/thumb10.jpg" alt="Pikkukuva 10"></a>
+            </div>
 
+            <h3>Upotettu video:</h3>
+            <p>Tämä on vain satunnainen eläinvideo, jonka löysin YouTubesta, mutta se on kuitenkin aika hauska video.</p>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vL8x7LcA-Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
 
+        </main>
 
+        <footer class="footer">
+            <p>&copy; 2026 Jesse Honkavaara | 
+                <a href="https://www.linkedin.com/in/jesse-honkavaara/" target="_blank" rel="noopener noreferrer" class="linkedin-link tooltip">LinkedIn-profiili
+                    <span class="tooltiptext">Tervetuloa vierailemaan Jessen LinkedIn-sivulla.</span>
+                </a>
+            </p>
+        </footer>
 
-
-
-
-
-
-
-
-
-    
+    </div>
 </body>
 
 </html>

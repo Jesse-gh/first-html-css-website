@@ -6,7 +6,6 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <!-- Favicon link pointing to the media folder -->
     <link rel="icon" type="image/png" href="media/favicon.png">
 </head> 
 
@@ -17,7 +16,6 @@
             <h1>HTML & CSS Website by Jesse H</h1>
         </header>
 
-        <!-- Navigation structured for the push-left flexbox layout -->
         <nav class="navigation">
             <div class="nav-left-spacer"></div>
             
@@ -28,7 +26,6 @@
             </div>
             
             <div class="nav-right-container">
-                <!-- Language Switch Button with Tooltip -->
                 <a href="hp-detailed-fin.html" class="lang-btn tooltip">Kieli suomeksi
                     <span class="tooltiptext">Toggles the language between Finnish and English.</span>
                 </a>
@@ -37,23 +34,28 @@
 
         <main class="main-content">
             <h2>Technical Details</h2>
-            <p>This page provides a deeper dive into the technical architecture and the specific features used to build this portfolio project.</p>
+            <p>This page provides a more detailed look at the technical architecture and other special features used in building this project. Tips from W3schools were used to some extent as a source of inspiration for creating this site.</p>
             
-            <h3>Advanced Features & Design Choices:</h3>
+            <h3>Design Choices and Features:</h3>
             <ul class="info-list">
-                <li><strong>CSS3 Transitions & Tooltips:</strong> One example of how CSS3 was used is the custom tooltips on the navigation and footer links. They utilize the <code>opacity</code> property combined with a <code>transition</code> delay (0.3s) to create a smooth, user-friendly fade-in effect when hovered over.</li>
-                <li><strong>Advanced Flexbox Logic:</strong> The navigation bar uses a sophisticated three-column Flexbox structure. It features a spacer element that dynamically pushes the navigation links to the left on narrower screens, ensuring the layout remains intact without overlapping the language toggle button.</li>
-                <li><strong>Transparency & Backgrounds:</strong> The site employs a full-page background image fixed to the viewport. The main content container uses an <code>rgba()</code> background color to create a semi-transparent effect that allows the background image to subtly show through while maintaining perfect text readability.</li>
-                <li><strong>Iframe Image Gallery:</strong> The image gallery on the media page is built using an HTML <code>iframe</code> element. By linking the thumbnail anchors directly to the iframe's name attribute, clicking a thumbnail updates the main image dynamically without requiring a full page reload.</li>
-                <li><strong>Custom Favicon:</strong> A favicon is the small image/icon displayed on the left side of the tab's title text (for example, in the Firefox browser). It's blue and features my initials, JH. I created the favicon myself and it was harder than expected, because the rounded corners weren't easy to make transparent, so it took some extra Photoshop skills to get it done.</li>
+                <li><strong>Responsiveness/Scalability:</strong> Initially, I had issues when the browser window was made narrower. The language switch button on the navigation bar could overlap with the link named "Media". However, I managed to fix this by dividing the navigation in a more logical way. Now, when scaling, only the language switch button is allowed to push the other navigation bar texts to the left, but not the other way around. The navigation bar texts cannot push the language switch button away or force it onto another line.</li>
+                <li><strong>CSS3:</strong> One example of using CSS3 is the tooltips for the language switch button and the footer's LinkedIn link. The tooltips appear when the user hovers the mouse over the links. A 0.3-second delay has also been set to them so they don't appear immediately.</li>
+                <li><strong>Image gallery built with iframe technology:</strong> The image gallery on the Media page is built using an iframe element. Thanks to the links on the thumbnails (miniature versions of the images), clicking a picture updates the new image on the screen without having to reload the entire page.</li>
+                <li><strong>Favicon and background image:</strong> A background image has been set for the site. Additionally, a favicon was created for the site using Photoshop. A favicon is a small icon that appears on the left side of the browser tab's title text (for example, in the Firefox browser). It can be recognized by its blue color and my initials, JH. I created the favicon myself, and it was harder than expected because the square's rounded corners weren't easy to make transparent, so making it required a bit of tweaking in Photoshop.</li>
             </ul>
 
-            <h3>Backend Architecture:</h3>
-            <p>As a deliberate design choice, this website does not utilize a backend database. The architecture was kept intentionally static and simple to focus purely on the core fundamentals of front-end web development (HTML & CSS).</p>
+            <h3>Technologies intentionally not used:</h3>
+            <ul class="info-list">
+                <li>As a conscious choice, the site does not use a database. I deliberately, and following the course instructions, decided not to use any programming languages or frameworks other than HTML and CSS languages. I wanted to keep the structure clean and simple so that the core features of these languages could properly stand out.</li>
+            </ul>
 
+            <h3>I might do some minor further development on the site after this UAS course is over:</h3>
+            <ul class="info-list">
+                <li>The site at least needs to be put online, which requires a hosting provider. I will probably use one of the free hosting providers, either Netlify or GitHub Pages.</li>
+                <li>Additionally, I am considering adding new pages or features to the site later, but I am pondering whether it makes sense. This is, after all, my first site made purely with HTML & CSS languages, so perhaps it could be left in this state, and instead, I could create a new site/project in the future that might use a broader range of different technologies and languages.</li>
+            </ul>
         </main>
 
-        <!-- Footer with copyright and LinkedIn profile on a single line with Tooltip -->
         <footer class="footer">
             <p>&copy; 2026 Jesse Honkavaara | 
                 <a href="https://www.linkedin.com/in/jesse-honkavaara/" target="_blank" rel="noopener noreferrer" class="linkedin-link tooltip">LinkedIn Profile

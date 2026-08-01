@@ -1,31 +1,70 @@
 <!DOCTYPE html> 
-<html> 
+<html lang="fi"> 
 
 <head>
-	<title> SELAIMEN TAB TEKSTI TAHAN </title> 
-	<meta charset="utf-8"/>
+    <title>Tekniset tiedot (FIN)</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="media/favicon.png">
 </head> 
 
-
 <body> 
-	<h1>h1 heading</h1>
+    <div class="flex-container">
+        
+        <header class="header">
+            <h1>HTML & CSS Website by Jesse H</h1>
+        </header>
 
-	<p>Random textt asdf.</p>
+        <nav class="navigation">
+            <div class="nav-left-spacer"></div>
+            
+            <div class="nav-links">
+                <a href="homepage-fin.html">Etusivu</a> | 
+                <a href="hp-detailed-fin.html">Tekniset tiedot</a> | 
+                <a href="mediapage-fin.html">Media</a>
+            </div>
+            
+            <div class="nav-right-container">
+                <a href="hp-detailed-eng.html" class="lang-btn tooltip">Language to English
+                    <span class="tooltiptext">Vaihtaa kielen englanniksi.</span>
+                </a>
+            </div>
+        </nav>
 
+        <main class="main-content">
+            <h2>Tekniset tiedot</h2>
+            <p>Tällä sivulla katsotaan yksityiskohtaisemmin sivuston teknistä arkkitehtuuria ja muita erityisominaisuuksia, joita tämän projektin rakentamisessa on käytetty. W3schoolsin vinkkejä on käytetty jonkun verran tämän sivuston tekemiseen inspiraation lähteenä.</p>
+            
+            <h3>Suunnitteluvalinnat ja ominaisuudet:</h3>
+            <ul class="info-list">
+                <li><strong>Responsiivisuus/Skaalautuvuus:</strong> Alunperin ongelmia tuotti se, kun selaimen ikkunan laittoi kapeammaksi, tällöin navigaatiopalkin kielenvaihtonappi saattoi mennä "Media" -nimisen linkin päälle. Sain tämän kuitenkin korjattua jakamalla navigaation järkevämmällä tavalla. Nyt skaalaustilanteessa vain kielenvaihtonapilla on lupa työntää muita tekstejä navigaatiopalkilla vasemmalle, mutta ei toisinpäin, navigaatiopalkin tekstit eivät voi työntää kielenvaihtonappia pois päin, eikä toiselle riville.</li>
+                <li><strong>CSS3:</strong> Yksi esimerkki CSS3:n käytöstä on kielenvaihtonapin ja alatunnisteessa olevan LinkedIn-linkin tooltipit. Ne tulevat näkyviin kun käyttäjä pitää hiirtä linkkien päällä. Niihin on asetettu myös 0,3 sekunnin viive, jotta ne eivät tule välittömästi näkyviin.</li>
+                <li><strong>Kuvagalleria on tehty iframella:</strong> Media-sivun kuvagalleria on rakennettu käyttäen iframe-elementtiä. Thumbnailien (eli kuvien pienoisversioiden) linkkien ansiosta kuvia klikattaessa uusi kuva päivittyy näytölle ilman, että koko sivua tarvitsee ladata uudelleen.</li>
+                <li><strong>Favicon ja taustakuva:</strong> Sivustolle on asetettu taustakuva. Lisäksi sivustoa varten on tehty Photoshopilla favicon eli pieni ikoni, joka näkyy selaimen välilehden otsikkotekstin vasemmalla puolella, esimerkiksi Firefox-selaimessa. Sen tunnistaa siitä, että se on sininen ja siinä on nimikirjaimeni JH. Tein faviconin itse ja se oli odotettua vaikeampaa, koska neliön pyöristettyjä kulmia ei ollut helppo tehdä läpinäkyviksi, joten sen tekeminen vaati hieman säätöä Photoshopin kanssa.</li>
+            </ul>
 
+            <h3>Tarkoituksellisesti käyttämättä jätetyt teknologiat:</h3>
+            <ul class="info-list">
+                <li>Tietoisena valintana sivusto ei käytä tietokantaa. Päätin tarkoituksellisesti ja kurssiohjeita noudattaen olla käyttämättä mitään muita ohjelmointikieliä tai kehyksiä (frameworks) kuin HTML ja CSS -kieliä. Halusin pitää rakenteen puhtaana ja selkeänä, jotta näiden kahden peruskielen ydinominaisuudet tulevat kunnolla esiin.</li>
+            </ul>
 
+            <h3>Teen mahdollisesti pientä jatkokehitystä sivustolle kurssipalautuksen jälkeen:</h3>
+            <ul class="info-list">
+                <li>Sivusto pitää ainakin laittaa nettiin ja siihen tarvitaan palveluntarjoaja. Otan luultavasti käyttöön toisen ilmaisista palveluntarjoajista joko Netlifyn tai GitHub Pagesin.</li>
+                <li>Lisäksi harkinnassa on lisätä uusia sivuja tai toimintoja sivustolle myöhemmin, mutta pohdin kyllä sitä, että onko siinä järkeä. Tämä on kuitenkin ensimmäinen puhtaasti HTML & CSS -kielillä tehty sivustoni, joten ehkä sen voisi jättää tähän tilaan ja voisin sen sijaan tulevaisuudessa tehdä uuden sivuston/projektin, joka kenties käyttää laajemmin eri teknologioita ja kieliä.</li>
+            </ul>
+        </main>
 
+        <footer class="footer">
+            <p>&copy; 2026 Jesse Honkavaara | 
+                <a href="https://www.linkedin.com/in/jesse-honkavaara/" target="_blank" rel="noopener noreferrer" class="linkedin-link tooltip">LinkedIn-profiili
+                    <span class="tooltiptext">Tervetuloa vierailemaan Jessen LinkedIn-sivulla.</span>
+                </a>
+            </p>
+        </footer>
 
-
-
-
-
-
-
-
-
-    
+    </div>
 </body>
 
 </html>
