@@ -34,6 +34,7 @@ body {
 .navigation {
     background-color: #34495e;
     text-align: center;
+    position: relative; /* Added to allow absolute positioning of the language button */
 }
 
 .navigation a {
@@ -134,5 +135,43 @@ main iframe {
 
 .linkedin-link:hover {
     color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Language Switch Button Styling */
+.lang-btn {
+    position: absolute; /* Positions the button freely within the navigation bar */
+    right: 20px; /* Pins it to the right side */
+    top: 50%;
+    transform: translateY(-50%); /* Perfectly centers it vertically */
+    background-color: #5c748c; 
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    margin: 0 !important; /* Removes the default link margin */
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+}
+
+.lang-btn:hover {
+    background-color: #ffffff;
+    color: #34495e !important;
+    text-decoration: none !important;
+}
+
+/* Technical Page Link Styling */
+.tech-link-container {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd; 
+    font-style: italic;
+}
+
+.tech-link-container a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tech-link-container a:hover {
     text-decoration: underline;
 }
