@@ -35,11 +35,10 @@ body {
 .navigation {
     background-color: #34495e;
     display: flex;
-    justify-content: space-between; /* Pushes child elements to far left and far right */
-    align-items: center; /* Vertically centers the items */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
-/* Ensures the text color for the pipe symbols '|' is white */
 .nav-links {
     color: white; 
 }
@@ -47,7 +46,7 @@ body {
 .nav-links a {
     color: white;
     text-decoration: none;
-    margin: 0 10px; /* Margins reduced slightly for better mobile fit */
+    margin: 0 10px; 
     font-weight: bold;
 }
 
@@ -77,7 +76,6 @@ body {
     margin-bottom: 10px; 
 }
 
-/* Inner list styling */
 .info-list ul {
     margin-top: 10px;
     margin-left: 20px;
@@ -90,30 +88,26 @@ body {
     color: #2c3e50; 
 }
 
-/* Media Page Styling */
-
 /* Center all iframes within the main content area */
 main iframe {
     display: block;
     margin: 0 auto;
-    max-width: 100%; /* Good practice for future mobile responsiveness */
+    max-width: 100%; 
 }
 
 .gallery-thumbnails {
-    margin: 10px auto 0 auto; /* Centers the thumbnails container horizontally */
+    margin: 10px auto 0 auto; 
     display: flex;
     flex-wrap: wrap; 
     max-width: 800px; 
 }
 
-/* Restrict the a-tag wrapper size to exactly 160x90 */
 .gallery-thumbnails a {
     display: block;
     width: 160px;
     height: 90px;
 }
 
-/* Force the image to fill the 160x90 wrapper and use transparent border to avoid layout shift */
 .gallery-thumbnails img {
     width: 100%;
     height: 100%;
@@ -151,7 +145,7 @@ main iframe {
     padding: 5px 15px;
     border-radius: 4px;
     border: 1px solid #ffffff;
-    white-space: nowrap; /* Prevents text from wrapping to the next line */
+    white-space: nowrap; 
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -163,7 +157,6 @@ main iframe {
     text-decoration: none !important;
 }
 
-/* Technical Page Link Styling */
 .tech-link-container {
     margin-top: 30px;
     padding-top: 15px;
@@ -179,4 +172,58 @@ main iframe {
 
 .tech-link-container a:hover {
     text-decoration: underline;
+}
+
+/* =========================================
+   Tooltip Styles (W3Schools implementation)
+   ========================================= */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px; /* Leveys tekstillä */
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 5px;
+    
+    /* Asemointi (Top) */
+    position: absolute;
+    z-index: 10;
+    bottom: 130%;
+    left: 50%;
+    margin-left: -110px; /* Puolet leveydestä keskittää laatikon täydellisesti */
+    
+    /* Häivytys (Fade in) CSS3 efekti */
+    opacity: 0;
+    transition: opacity 0.3s;
+    
+    /* Yliajetaan linkin paksu fontti, jotta tooltip on helpompi lukea */
+    font-weight: normal;
+    font-size: 0.85em;
+    line-height: 1.4;
+    white-space: normal; /* Sallii tekstin rivittyä tarvittaessa */
+}
+
+/* Tooltipin alaspäin osoittava kolmio */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+}
+
+/* Näytä tooltip hoveratessa */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
