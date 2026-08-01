@@ -9,7 +9,6 @@ body {
     line-height: 1.6;
     color: #333;
     
-    /* CSS3 Background implementation with new file name */
     background: url('media/background.jpg') no-repeat center center fixed;
     background-size: cover; 
 }
@@ -21,10 +20,7 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     
-    /* CSS3 Semi-transparent background (frosted glass effect) */
-    background-color: rgba(255, 255, 255, 0.93);
-    
-    /* Slightly stronger shadow to lift the container off the image background */
+    background-color: rgba(240, 242, 244, 0.95);
     box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
 
@@ -33,21 +29,37 @@ body {
 }
 
 .header {
-    background-color: #2c3e50;
+    background-color: #3d5670; 
     color: white;
     text-align: center;
 }
 
-/* Flexbox implementation for the navigation bar */
+/* Uusi 3-osainen navigaatio logiikka, joka estää rivittymisen */
 .navigation {
-    background-color: #333333; /* Muutettu tummanharmaaksi */
+    background-color: #333333; 
     display: flex;
-    justify-content: space-between; 
     align-items: center; 
+    flex-wrap: nowrap; /* Ei koskaan pudota nappia uudelle riville */
+}
+
+/* Vasen tyhjä tila, joka kutistuu ensimmäisenä nollaan (työntäen linkkejä vasemmalle) */
+.nav-left-spacer {
+    flex: 1 1 0%;
+}
+
+/* Oikea laatikko, joka pitää napin oikealla, mutta ei kutistu napin leveyttä pienemmäksi */
+.nav-right-container {
+    flex: 1 1 0%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav-links {
+    flex: 0 1 auto;
     color: white; 
+    text-align: center;
+    white-space: nowrap; /* Estää linkkien rivittymisen päällekkäin */
+    margin: 0 20px; /* Suojaetäisyys, jottei nappi kosketa tekstiä */
 }
 
 .nav-links a {
@@ -61,21 +73,49 @@ body {
     text-decoration: underline;
 }
 
+.lang-btn {
+    background-color: #5c748c; 
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    white-space: nowrap; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0; 
+    flex-shrink: 0; /* Estää nappia puristumasta kasaan */
+}
+
+.lang-btn:hover {
+    background-color: #ffffff;
+    color: #34495e !important;
+    text-decoration: none !important;
+}
+
 .main-content {
     flex: 1;
-    padding: 40px 20px;
+    padding: 20px 20px 40px 20px;
 }
 
-.footer {
-    background-color: #333333; /* Muutettu tummanharmaaksi */
-    color: white;
-    text-align: center;
-    font-size: 0.9em;
+.main-content h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
 }
 
-/* List styling requirements */
+.main-content h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #333; 
+}
+
+.main-content p {
+    margin-bottom: 15px;
+}
+
+/* List styling */
 .info-list {
-    margin: 20px 0 20px 40px; 
+    margin: 0 0 20px 40px; 
     line-height: 1.8;
 }
 
@@ -89,13 +129,7 @@ body {
     list-style-type: square; 
 }
 
-.main-content h3 {
-    margin-top: 30px;
-    margin-bottom: 15px;
-    color: #2c3e50; 
-}
-
-/* Center all iframes within the main content area */
+/* Media Page Elements */
 main iframe {
     display: block;
     margin: 0 auto;
@@ -123,14 +157,21 @@ main iframe {
 }
 
 .gallery-thumbnails img:hover {
-    border-color: #2c3e50; 
+    border-color: #3d5670; 
 }
 
 .video-container {
     margin-top: 20px;
 }
 
-/* Footer Link Styling */
+/* --- TÄMÄ PALAUTETTU: Footer Styling --- */
+.footer {
+    background-color: #333333; 
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+}
+
 .footer p {
     margin: 5px 0;
 }
@@ -146,25 +187,6 @@ main iframe {
     text-decoration: underline;
 }
 
-/* Language Switch Button Styling */
-.lang-btn {
-    background-color: #5c748c; 
-    padding: 5px 15px;
-    border-radius: 4px;
-    border: 1px solid #ffffff;
-    white-space: nowrap; 
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.lang-btn:hover {
-    background-color: #ffffff;
-    color: #34495e !important;
-    text-decoration: none !important;
-}
-
-/* Technical Page Link Styling */
 .tech-link-container {
     margin-top: 30px;
     padding-top: 15px;
@@ -172,7 +194,6 @@ main iframe {
     font-style: italic;
 }
 
-/* Updated to look more like a traditional clickable link */
 .tech-link-container a {
     color: #0056b3; 
     text-decoration: underline; 
@@ -183,10 +204,7 @@ main iframe {
     color: #003d82; 
 }
 
-/* =========================================
-   Tooltip Styles
-   ========================================= */
-
+/* Tooltip Styles */
 .tooltip {
     position: relative;
     display: inline-block;
@@ -225,9 +243,8 @@ main iframe {
     border-color: #222 transparent transparent transparent;
 }
 
-/* Näytä tooltip hoveratessa, viiveellä */
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.2s ease-in 0.2s; 
+    transition: opacity 0.2s ease-in 0.3s; 
 }

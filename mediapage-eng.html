@@ -17,22 +17,27 @@
             <h1>HTML & CSS Website by Jesse H</h1>
         </header>
 
-        <!-- Navigation structured for flexbox layout -->
+        <!-- Navigation structured for the new push-left flexbox layout -->
         <nav class="navigation">
+            <div class="nav-left-spacer"></div>
+            
             <div class="nav-links">
                 <a href="homepage-eng.html">Home</a> | 
                 <a href="hp-detailed-eng.html">Technical Details</a> | 
                 <a href="mediapage-eng.html">Media</a>
             </div>
-            <!-- Language Switch Button with Tooltip -->
-            <a href="mediapage-fin.html" class="lang-btn tooltip">Kieli suomeksi
-                <span class="tooltiptext">Toggles the language between Finnish and English.</span>
-            </a>
+            
+            <div class="nav-right-container">
+                <!-- Language Switch Button with Tooltip -->
+                <a href="mediapage-fin.html" class="lang-btn tooltip">Kieli suomeksi
+                    <span class="tooltiptext">Toggles the language between Finnish and English.</span>
+                </a>
+            </div>
         </nav>
 
         <main class="main-content">
             <h2>Media page</h2>
-            <p>This page showcases an image gallery built with an iframe and an embedded YouTube video.</p>
+            <p>This page is meant for pictures and videos.</p>
             
             <h3>Image Gallery</h3>
             <!-- Image gallery using iframe (16:9 aspect ratio, 800x450). Default image loaded from the media folder -->
@@ -47,14 +52,14 @@
                 <a href="media/4.jpg" target="myframe"><img src="media/thumb4.jpg" alt="Thumbnail 4"></a>
                 <a href="media/5.jpg" target="myframe"><img src="media/thumb5.jpg" alt="Thumbnail 5"></a>
                 <a href="media/6.jpg" target="myframe"><img src="media/thumb6.jpg" alt="Thumbnail 6"></a>
-                <a href="media/7.jpg" target="myframe"><img src="media/thumb7.jpg" alt="Thumbnail 7"></a>
+                <a href="media/7.jpg" target="myframe"><img src="media/7.jpg" alt="Thumbnail 7"></a>
                 <a href="media/8.jpg" target="myframe"><img src="media/thumb8.jpg" alt="Thumbnail 8"></a>
                 <a href="media/9.jpg" target="myframe"><img src="media/thumb9.jpg" alt="Thumbnail 9"></a>
                 <a href="media/10.jpg" target="myframe"><img src="media/thumb10.jpg" alt="Thumbnail 10"></a>
             </div>
 
-            <h3>Embedded Video</h3>
-            <p>Here is a video embedded from YouTube.</p>
+            <h3>An embedded video</h3>
+            
             <!-- Embedded YouTube video -->
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/vL8x7LcA-Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
