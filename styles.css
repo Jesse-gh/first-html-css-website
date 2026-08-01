@@ -8,8 +8,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: #333;
-    
-    background: url('media/background.jpg') no-repeat center center fixed;
+}
+
+/* Englanninkielisen sivuston taustakuva */
+html[lang="en"] body {
+    background: url('media/background_eng.jpg') no-repeat center center fixed;
+    background-size: cover; 
+}
+
+/* Suomenkielisen sivuston taustakuva */
+html[lang="fi"] body {
+    background: url('media/background_fin.jpg') no-repeat center center fixed;
     background-size: cover; 
 }
 
@@ -164,7 +173,7 @@ main iframe {
     margin-top: 20px;
 }
 
-/* --- TÄMÄ PALAUTETTU: Footer Styling --- */
+/* --- Footer Styling --- */
 .footer {
     background-color: #333333; 
     color: white;
