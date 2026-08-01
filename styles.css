@@ -7,8 +7,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f9;
     color: #333;
+    
+    /* CSS3 Background implementation with new file name */
+    background: url('media/background.jpg') no-repeat center center fixed;
+    background-size: cover; 
 }
 
 .flex-container {
@@ -17,8 +20,12 @@ body {
     min-height: 100vh;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+    /* CSS3 Semi-transparent background (frosted glass effect) */
+    background-color: rgba(255, 255, 255, 0.93);
+    
+    /* Slightly stronger shadow to lift the container off the image background */
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
 
 .header, .navigation, .main-content, .footer {
@@ -33,7 +40,7 @@ body {
 
 /* Flexbox implementation for the navigation bar */
 .navigation {
-    background-color: #34495e;
+    background-color: #333333; /* Muutettu tummanharmaaksi */
     display: flex;
     justify-content: space-between; 
     align-items: center; 
@@ -60,7 +67,7 @@ body {
 }
 
 .footer {
-    background-color: #2c3e50;
+    background-color: #333333; /* Muutettu tummanharmaaksi */
     color: white;
     text-align: center;
     font-size: 0.9em;
@@ -157,6 +164,7 @@ main iframe {
     text-decoration: none !important;
 }
 
+/* Technical Page Link Styling */
 .tech-link-container {
     margin-top: 30px;
     padding-top: 15px;
@@ -164,18 +172,19 @@ main iframe {
     font-style: italic;
 }
 
+/* Updated to look more like a traditional clickable link */
 .tech-link-container a {
-    color: #2c3e50;
-    text-decoration: none;
+    color: #0056b3; 
+    text-decoration: underline; 
     font-weight: bold;
 }
 
 .tech-link-container a:hover {
-    text-decoration: underline;
+    color: #003d82; 
 }
 
 /* =========================================
-   Tooltip Styles (W3Schools implementation)
+   Tooltip Styles
    ========================================= */
 
 .tooltip {
@@ -185,32 +194,26 @@ main iframe {
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 220px; /* Leveys tekstillä */
+    width: 220px;
     background-color: #222;
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 8px 5px;
     
-    /* Asemointi (Top) */
     position: absolute;
     z-index: 10;
     bottom: 130%;
     left: 50%;
-    margin-left: -110px; /* Puolet leveydestä keskittää laatikon täydellisesti */
+    margin-left: -110px; 
     
-    /* Häivytys (Fade in) CSS3 efekti */
     opacity: 0;
-    transition: opacity 0.3s;
-    
-    /* Yliajetaan linkin paksu fontti, jotta tooltip on helpompi lukea */
     font-weight: normal;
     font-size: 0.85em;
     line-height: 1.4;
-    white-space: normal; /* Sallii tekstin rivittyä tarvittaessa */
+    white-space: normal; 
 }
 
-/* Tooltipin alaspäin osoittava kolmio */
 .tooltip .tooltiptext::after {
     content: "";
     position: absolute;
@@ -222,8 +225,9 @@ main iframe {
     border-color: #222 transparent transparent transparent;
 }
 
-/* Näytä tooltip hoveratessa */
+/* Näytä tooltip hoveratessa, viiveellä */
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+    transition: opacity 0.2s ease-in 0.2s; 
 }
