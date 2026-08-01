@@ -31,20 +31,27 @@ body {
     text-align: center;
 }
 
+/* Flexbox implementation for the navigation bar */
 .navigation {
     background-color: #34495e;
-    text-align: center;
-    position: relative; /* Added to allow absolute positioning of the language button */
+    display: flex;
+    justify-content: space-between; /* Pushes child elements to far left and far right */
+    align-items: center; /* Vertically centers the items */
 }
 
-.navigation a {
+/* Ensures the text color for the pipe symbols '|' is white */
+.nav-links {
+    color: white; 
+}
+
+.nav-links a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px; /* Margins reduced slightly for better mobile fit */
     font-weight: bold;
 }
 
-.navigation a:hover {
+.nav-links a:hover {
     text-decoration: underline;
 }
 
@@ -140,16 +147,14 @@ main iframe {
 
 /* Language Switch Button Styling */
 .lang-btn {
-    position: absolute; /* Positions the button freely within the navigation bar */
-    right: 20px; /* Pins it to the right side */
-    top: 50%;
-    transform: translateY(-50%); /* Perfectly centers it vertically */
     background-color: #5c748c; 
     padding: 5px 15px;
     border-radius: 4px;
     border: 1px solid #ffffff;
-    margin: 0 !important; /* Removes the default link margin */
     white-space: nowrap; /* Prevents text from wrapping to the next line */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .lang-btn:hover {
