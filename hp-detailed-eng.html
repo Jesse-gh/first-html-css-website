@@ -1,31 +1,68 @@
 <!DOCTYPE html> 
-<html> 
+<html lang="en"> 
 
 <head>
-	<title> SELAIMEN TAB TEKSTI TAHAN </title> 
-	<meta charset="utf-8"/>
+    <title>Technical Details (ENG)</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <!-- Favicon link pointing to the media folder -->
+    <link rel="icon" type="image/png" href="media/favicon.png">
 </head> 
 
-
 <body> 
-	<h1>h1 heading</h1>
+    <div class="flex-container">
+        
+        <header class="header">
+            <h1>HTML & CSS Website by Jesse H</h1>
+        </header>
 
-	<p>Random textt asdf.</p>
+        <!-- Navigation structured for the push-left flexbox layout -->
+        <nav class="navigation">
+            <div class="nav-left-spacer"></div>
+            
+            <div class="nav-links">
+                <a href="homepage-eng.html">Home</a> | 
+                <a href="hp-detailed-eng.html">Technical Details</a> | 
+                <a href="mediapage-eng.html">Media</a>
+            </div>
+            
+            <div class="nav-right-container">
+                <!-- Language Switch Button with Tooltip -->
+                <a href="hp-detailed-fin.html" class="lang-btn tooltip">Kieli suomeksi
+                    <span class="tooltiptext">Toggles the language between Finnish and English.</span>
+                </a>
+            </div>
+        </nav>
 
+        <main class="main-content">
+            <h2>Technical Details</h2>
+            <p>This page provides a deeper dive into the technical architecture and the specific features used to build this portfolio project.</p>
+            
+            <h3>Advanced Features & Design Choices:</h3>
+            <ul class="info-list">
+                <li><strong>CSS3 Transitions & Tooltips:</strong> One example of how CSS3 was used is the custom tooltips on the navigation and footer links. They utilize the <code>opacity</code> property combined with a <code>transition</code> delay (0.3s) to create a smooth, user-friendly fade-in effect when hovered over.</li>
+                <li><strong>Advanced Flexbox Logic:</strong> The navigation bar uses a sophisticated three-column Flexbox structure. It features a spacer element that dynamically pushes the navigation links to the left on narrower screens, ensuring the layout remains intact without overlapping the language toggle button.</li>
+                <li><strong>Transparency & Backgrounds:</strong> The site employs a full-page background image fixed to the viewport. The main content container uses an <code>rgba()</code> background color to create a semi-transparent effect that allows the background image to subtly show through while maintaining perfect text readability.</li>
+                <li><strong>Iframe Image Gallery:</strong> The image gallery on the media page is built using an HTML <code>iframe</code> element. By linking the thumbnail anchors directly to the iframe's name attribute, clicking a thumbnail updates the main image dynamically without requiring a full page reload.</li>
+                <li><strong>Custom Favicon:</strong> A favicon is the small image/icon displayed on the left side of the tab's title text (for example, in the Firefox browser). It's blue and features my initials, JH. I created the favicon myself and it was harder than expected, because the rounded corners weren't easy to make transparent, so it took some extra Photoshop skills to get it done.</li>
+            </ul>
 
+            <h3>Backend Architecture:</h3>
+            <p>As a deliberate design choice, this website does not utilize a backend database. The architecture was kept intentionally static and simple to focus purely on the core fundamentals of front-end web development (HTML & CSS).</p>
 
+        </main>
 
+        <!-- Footer with copyright and LinkedIn profile on a single line with Tooltip -->
+        <footer class="footer">
+            <p>&copy; 2026 Jesse Honkavaara | 
+                <a href="https://www.linkedin.com/in/jesse-honkavaara/" target="_blank" rel="noopener noreferrer" class="linkedin-link tooltip">LinkedIn Profile
+                    <span class="tooltiptext">You are welcome to visit Jesse's LinkedIn page.</span>
+                </a>
+            </p>
+        </footer>
 
-
-
-
-
-
-
-
-
-    
+    </div>
 </body>
 
 </html>
