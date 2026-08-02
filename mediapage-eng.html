@@ -6,18 +6,19 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <!-- Favicon link pointing to the media folder -->
     <link rel="icon" type="image/png" href="media/favicon.png">
 </head> 
 
 <body> 
+    
+    <!-- This flexbox container organizes most of the structure on this page. -->
     <div class="flex-container">
         
         <header class="header">
             <h1>HTML & CSS Website by Jesse H</h1>
         </header>
 
-        <!-- Navigation structured for the new push-left flexbox layout -->
+        <!-- This prevents the language button from dropping to a new line. -->
         <nav class="navigation">
             <div class="nav-left-spacer"></div>
             
@@ -28,24 +29,27 @@
             </div>
             
             <div class="nav-right-container">
-                <!-- Language Switch Button with Tooltip -->
+
+                <!-- Tooltip created with CSS. -->
                 <a href="mediapage-fin.html" class="lang-btn tooltip">Kieli suomeksi
                     <span class="tooltiptext">Toggles the language between Finnish and English.</span>
                 </a>
             </div>
         </nav>
 
+        <!-- Code for the image gallery and for the video. -->
         <main class="main-content">
             <h2>Media page</h2>
             <p>This page is meant for pictures and videos.</p>
             
             <h3>Image Gallery:</h3>
             <p>All of the pictures were taken by me with my cellphone around the Helsinki area.</p>
-            <!-- Image gallery using iframe (16:9 aspect ratio, 800x450). Default image loaded from the media folder -->
+            
+            <!-- This part of iframe displays the large image. -->
             <iframe width="800" height="450" name="myframe" frameborder="0" src="media/1.jpg"> 
             </iframe>
             
-            <!-- Image links with thumbnails pointing to the media folder -->
+            <!-- These links change the main image of the iframe. -->
             <div class="gallery-thumbnails">
                 <a href="media/1.jpg" target="myframe"><img src="media/thumb1.jpg" alt="Thumbnail 1"></a>
                 <a href="media/2.jpg" target="myframe"><img src="media/thumb2.jpg" alt="Thumbnail 2"></a>
@@ -62,14 +66,14 @@
             <h3>An embedded video:</h3>
             <p>This is just a random animal video I found on YouTube, but it's quite a funny video nonetheless.</p>
             
-            <!-- Embedded YouTube video -->
+            <!-- Embedded YouTube video. -->
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/vL8x7LcA-Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
         </main>
 
-        <!-- Footer with copyright and LinkedIn profile on a single line with Tooltip -->
+        <!-- The footer includes a link to my LinkedIn page. -->
         <footer class="footer">
             <p>&copy; 2026 Jesse Honkavaara | 
                 <a href="https://www.linkedin.com/in/jesse-honkavaara/" target="_blank" rel="noopener noreferrer" class="linkedin-link tooltip">LinkedIn Profile
