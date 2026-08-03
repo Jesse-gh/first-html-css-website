@@ -144,7 +144,7 @@ main iframe {
     max-width: 100%; 
     height: auto;
     aspect-ratio: 16 / 9;
-    border: none;
+    border: none; 
 }
 
 /* Flexbox layout for the image gallery thumbnails. */
