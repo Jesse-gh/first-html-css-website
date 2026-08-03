@@ -43,10 +43,13 @@
             <p>This page provides a more detailed look at the technical architecture and other special features used in building this project. Tips from W3schools were used to some extent as a source of inspiration for creating this site.</p>
             
             <h3>Design Choices and Features:</h3>
+
+            <!-- This properly structured HTML list fulfills the assignment requirement to use a form, table, or list and style it with CSS. -->
             <ul class="info-list">
                 <li><strong>Website file structure:</strong> The site consists of six HTML files and one CSS file. The styles for all these HTML pages are defined by this single CSS file. In my opinion, this is a useful way to handle website creation, as it helps keep the website's style consistent across the different HTML pages of the site. I did not use CSS inline styles or CSS internal styles written inside the HTML code at all. Instead, all styles are done using the CSS external technique, which is the generally recommended method for the sake of code readability.</li>
                 <li><strong>Responsiveness/Scalability:</strong> Initially, I had issues when the browser window was made narrower. The language switch button on the navigation bar could overlap with the link named "Media". However, I managed to fix this by dividing the navigation in a more logical way. Now, when scaling, only the language switch button is allowed to push the other navigation bar texts to the left, but not the other way around. The navigation bar texts cannot push the language switch button away or force it onto another line.</li>
                 <li><strong>CSS3:</strong> One example of using CSS3 is the tooltips for the language switch button and the footer's LinkedIn link. The tooltips appear when the user hovers the mouse over the links. A 0.3-second delay has also been set to them so they don't appear immediately.</li>
+                <li><strong>Using HTML lists:</strong> The course assignment required using either an HTML form, table, or list and styling it with CSS. I chose to use lists for this project. All bullet points on the site, like this list shown here, are created properly with HTML &lt;ul&gt; and &lt;li&gt; elements, instead of being written manually as text.</li>
                 <li><strong>Image gallery built with iframe technology:</strong> The image gallery on the Media page is built using an iframe element. Thanks to the links on the thumbnails (miniature versions of the images), clicking a picture updates the new image on the screen without having to reload the entire page.</li>
                 <li><strong>Background image:</strong> A background image has been set for the site, which changes depending on whether the page is in English or Finnish.</li>
                 <li><strong>Favicon:</strong> A favicon was created for the site using Photoshop. As a reminder, a favicon is a small icon that appears on the left side of the browser tab's title text (for example, in the Firefox browser). It can be recognized by its blue color and my initials, JH. I created the favicon myself, and it was harder than expected because the square's rounded corners weren't easy to make transparent, so making it required a bit of tweaking in Photoshop.</li>
@@ -67,6 +70,9 @@
         <!-- The footer includes a link to my LinkedIn page. -->
         <footer class="footer">
             <p>&copy; 2026 Jesse Honkavaara | 
+                
+                <!-- I put this part of the code here for internet security "rel="noopener noreferrer"
+                because the site will be put to internet at some point. -->
                 <a href="https://www.linkedin.com/in/jesse-honkavaara/" target="_blank" rel="noopener noreferrer" class="linkedin-link tooltip">LinkedIn Profile
                     <span class="tooltiptext">You are welcome to visit Jesse's LinkedIn page.</span>
                 </a>
