@@ -142,6 +142,7 @@ main iframe {
     display: block;
     margin: 0 auto;
     max-width: 100%; 
+    border: none; /* Removes the border from all iframes, replacing the obsolete HTML attribute. */
 }
 
 /* Flexbox layout for the image gallery thumbnails. */
