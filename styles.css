@@ -144,7 +144,7 @@ main iframe {
     max-width: 100%; 
     height: auto;
     aspect-ratio: 16 / 9;
-    border: none; 
+    border: none;
 }
 
 /* Flexbox layout for the image gallery thumbnails. */
@@ -258,4 +258,27 @@ main iframe {
     visibility: visible;
     opacity: 1;
     transition: opacity 0.2s ease-in 0.3s; 
+}
+
+/* --- MOBILE RESPONSIVENESS FIXES --- */
+@media (max-width: 700px) {
+    .navigation {
+        flex-wrap: wrap; /* Allows items to drop to a new line */
+        flex-direction: column; /* Stacks the items vertically */
+        gap: 15px; /* Adds space between the stacked items */
+        padding: 15px;
+    }
+    
+    .nav-left-spacer {
+        display: none; /* Hides the empty spacer so links center perfectly */
+    }
+    
+    .nav-links {
+        margin: 0; 
+        white-space: normal; /* Allows link text to wrap if absolutely necessary */
+    }
+    
+    .nav-right-container {
+        justify-content: center; /* Centers the language button */
+    }
 }
