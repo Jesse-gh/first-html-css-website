@@ -27,11 +27,10 @@ https://jesse-gh.github.io/first-html-css-website/
 ## Screenshots
 
 <p align="center">
-  <img src="githubpics/TEST_NARROW_1.png" width="49%">
-  <img src="githubpics/TEST_NARROW_2.png" width="49%">
+  <img src="githubpics/readme_pic1.png" width="49%">
+  <img src="githubpics/readme_pic2.png" width="49%">
 </p>
 
-<p align="center">
-  <img src="githubpics/CELLPHONE_KUVA.png" width="49%">
-  <img src="githubpics/readme_pic3.png" width="49%">
+<p>
+  <img src="githubpics/readme_pic3.png" width="100%">
 </p>
