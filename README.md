@@ -26,6 +26,12 @@ https://jesse-gh.github.io/first-html-css-website/
 
 ## Screenshots
 
-[SINÄ VOIT KIRJOITTAA TÄHÄN KUVAN LINKIN]
+<p align="center">
+  <img src="githubpics/TEST_NARROW_1.png" width="49%">
+  <img src="githubpics/TEST_NARROW_2.png" width="49%">
+</p>
 
-[SINÄ VOIT KIRJOITTAA TÄHÄN TOISEN KUVAN LINKIN]
+<p align="center">
+  <img src="githubpics/CELLPHONE_KUVA.png" width="49%">
+  <img src="githubpics/readme_pic3.png" width="49%">
+</p>
