@@ -25,7 +25,6 @@ https://jesse-gh.github.io/first-html-css-website/
 * **Testing:** All HTML and CSS code has been checked with W3C validators. All warnings and errors were fixed during the testing phase. The website's functionality was also tested on Windows 11 using Chrome, Edge, and Firefox browsers, and the mobile version was tested on an iPhone using Safari.
 
 ## Screenshots
-
 <p align="center">
   <img src="githubpics/readme_pic1.png" width="49%">
   <img src="githubpics/readme_pic2.png" width="49%">
@@ -34,3 +33,6 @@ https://jesse-gh.github.io/first-html-css-website/
 <p>
   <img src="githubpics/readme_pic3.png" width="100%">
 </p>
+
+## License
+This project is licensed under the MIT License.
